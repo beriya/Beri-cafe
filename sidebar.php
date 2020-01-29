@@ -2,7 +2,7 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package coffee-house
+ * @package SKT Cafe
  */
 ?>
 <div id="sidebar">    

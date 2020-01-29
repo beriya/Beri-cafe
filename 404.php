@@ -1,27 +1,28 @@
 <?php
+/**
+ * The template for displaying 404 pages (Not Found).
+ *
+ * @package SKT Cafe
+ */
 get_header(); ?>
-
-	<div id="primary-404" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'This page could not be found!', 'coffee house' ); ?></h1>
-				</header>
-
-				<div class="page-content">
-					<p><?php esc_html_e( 'sorry!!!.The page you are looking for is not available.', 'coffee house' );?></p>
-					
-				<div class="error-homepage">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<?php esc_html_e('Back To Home','coffee house'); ?>
-					</a>
-				</div>
-
-				</div>
-			</section>
-
-		</main>
-	</div>
-
-<?php get_footer();
+<div class="container">
+    <div class="page_content">
+        <section class="site-main" id="sitemain">
+            <header class="page-header">
+                <h1 class="entry-title"><?php
+esc_html_e('404 Not Found', 'skt-cafe'); ?></h1>
+            </header><!-- .page-header -->
+            <div class="page-content">
+                <p class="text-404"><?php
+esc_html_e('Looks like you have taken a wrong turn.....Dont worry... it happens to the best of us.', 'skt-cafe'); ?></p>
+                <?php
+get_search_form(); ?>
+            </div><!-- .page-content -->
+        </section>
+     <?php
+get_sidebar(); ?>      
+    <div class="clear"></div>
+    </div>
+</div>
+<?php
+get_footer(); ?>
