@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (Not Found).
  *
- * @package SKT Cafe
+ * @package Beri_cafe
  */
 get_header(); ?>
 <div class="container">
@@ -10,11 +10,11 @@ get_header(); ?>
         <section class="site-main" id="sitemain">
             <header class="page-header">
                 <h1 class="entry-title"><?php
-esc_html_e('404 Not Found', 'skt-cafe'); ?></h1>
+esc_html_e('404 Not Found', 'Beri_cafe'); ?></h1>
             </header><!-- .page-header -->
             <div class="page-content">
                 <p class="text-404"><?php
-esc_html_e('Looks like you have taken a wrong turn.....Dont worry... it happens to the best of us.', 'skt-cafe'); ?></p>
+esc_html_e('It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'Beri_cafe'); ?></p>
                 <?php
 get_search_form(); ?>
             </div><!-- .page-content -->

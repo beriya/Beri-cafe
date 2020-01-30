@@ -1,6 +1,6 @@
 <?php
 /**
- * @package SKT Cafe
+ * @package Beri_cafe
  */
 ?>
 <div class="blog_lists">
@@ -14,18 +14,18 @@
             <div class="postmeta">
                 <div class="post-date"><?php the_date(); ?></div><!-- post-date -->
                 <div class="post-comment"> &nbsp;|&nbsp; <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a></div>
-                <div class="post-categories"> &nbsp;|&nbsp; <?php the_category( esc_attr__( ', ', 'skt-cafe' )); ?></div>                  
+                <div class="post-categories"> &nbsp;|&nbsp; <?php the_category( esc_attr__( ', ', 'Beri_cafe' )); ?></div>                  
             </div><!-- postmeta -->
         <?php endif; ?>
     </header><!-- .entry-header -->
     <?php if ( is_search() || !is_single() ) : // Only display Excerpts for Search ?>
     <div class="entry-summary">
         <?php the_excerpt(); ?>
-       <a class="ReadMore" href="<?php the_permalink(); ?>"><?php esc_html_e('Read More &rarr;','skt-cafe'); ?></a>
+       <a class="ReadMore" href="<?php the_permalink(); ?>"><?php esc_html_e('Read More &rarr;','Beri_cafe'); ?></a>
     </div><!-- .entry-summary -->
     <?php else : ?>
     <div class="entry-content">
-        <?php the_content( esc_html__( 'Continue reading <span class="meta-nav">&rarr;</span>', 'skt-cafe' ) ); ?>          
+        <?php the_content( esc_html__( 'Continue reading <span class="meta-nav">&rarr;</span>', 'Beri_cafe' ) ); ?>          
     </div><!-- .entry-content -->
     <?php endif; ?>
     <div class="clear"></div>

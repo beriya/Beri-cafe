@@ -4,10 +4,10 @@
  *
  * The area of the page that contains both current comments
  * and the comment form. The actual display of comments is
- * handled by a callback to skt_cafe_comment() which is
+ * handled by a callback to Beri_cafe_comment() which is
  * located in the inc/template-tags.php file.
  *
- * @package SKT Cafe
+ * @package Beri_cafe
  */
 /*
  * If the current post is protected by a password and
@@ -24,7 +24,7 @@ if ( post_password_required() )
 			<?php
 				printf( 
 					/* translators: 1: number of comments, 2: post title */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'skt-cafe' ) ),
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'Beri_cafe' ) ),
 					esc_attr(number_format_i18n( get_comments_number() )),
 					'<span>' . get_the_title() . '</span>'
 				);
@@ -32,27 +32,27 @@ if ( post_password_required() )
 		</h2>
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'skt-cafe' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'skt-cafe' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'skt-cafe' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'Beri_cafe' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'Beri_cafe' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'Beri_cafe' ) ); ?></div>
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // check for comment navigation ?>
 		<ol class="comment-list">
 			<?php
 				/* Loop through and list the comments. Tell wp_list_comments()
-				 * to use skt_cafe_comment() to format the comments.
+				 * to use Beri_cafe_comment() to format the comments.
 				 * If you want to override this in a child theme, then you can
-				 * define skt_cafe_comment() and that will be used instead.
-				 * See skt_cafe_comment() in inc/template-tags.php for more.
+				 * define Beri_cafe_comment() and that will be used instead.
+				 * See Beri_cafe_comment() in inc/template-tags.php for more.
 				 */
-				wp_list_comments( array( 'callback' => 'skt_cafe_comment' ) );
+				wp_list_comments( array( 'callback' => 'Beri_cafe_comment' ) );
 			?>
 		</ol><!-- .comment-list -->
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'skt-cafe' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'skt-cafe' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'skt-cafe' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'Beri_cafe' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'Beri_cafe' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'Beri_cafe' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // check for comment navigation 
 			  endif; // have_comments() 
@@ -60,7 +60,7 @@ if ( post_password_required() )
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'skt-cafe' ); ?></p>
+		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'Beri_cafe' ); ?></p>
 	<?php endif; 
 		  comment_form(); ?>
 </div><!-- #comments -->

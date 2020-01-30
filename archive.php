@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package SKT Cafe
+ * @package Beri_cafe
  */
 get_header(); ?>
 <div class="container">
@@ -28,9 +28,9 @@ get_header(); ?>
 				// Previous/next post navigation.
 				the_posts_pagination( array(
 							'mid_size' => 2,
-							'prev_text' => esc_html__( 'Back', 'skt-cafe' ),
-							'next_text' => esc_html__( 'Next', 'skt-cafe' ),
-							'screen_reader_text' => esc_html__( 'Posts navigation', 'skt-cafe' )
+							'prev_text' => esc_html__( 'Back', 'Beri_cafe' ),
+							'next_text' => esc_html__( 'Next', 'Beri_cafe' ),
+							'screen_reader_text' => esc_html__( 'Posts navigation', 'Beri_cafe' )
 				) );
 			    else : 
 				get_template_part( 'no-results'); 
