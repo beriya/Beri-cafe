@@ -2,7 +2,7 @@
 /**
  * The template for displaying Search Results pages.
  *
- * @package SKT Cafe
+ * @package Beri_cafe
  */
 get_header(); ?>
 <div class="container">
@@ -13,7 +13,7 @@ get_header(); ?>
                     <header>
                         <h1 class="entry-title">
 						<?php /* translators: %s: search term */ 
-						printf( esc_attr__( 'Search Results for: %s', 'skt-cafe' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+						printf( esc_attr__( 'Search Results for: %s', 'Beri_cafe' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
                     </header>
                     <?php while ( have_posts() ) : the_post(); 
 						  get_template_part( 'content', 'search' );  

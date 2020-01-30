@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package SKT Cafe
+ * @package Beri_cafe
  */
 get_header(); 
 
@@ -44,10 +44,10 @@ $args = array(
         $i = 0;
         while ( $query->have_posts() ) : $query->the_post();
           $i++;
-          $skt_cafe_slideno[] = $i;
-          $skt_cafe_slidetitle[] = get_the_title();
-		  $skt_cafe_slidedesc[] = get_the_excerpt();
-          $skt_cafe_slidelink[] = esc_url(get_permalink());
+          $Beri_cafe_slideno[] = $i;
+          
+		  $Beri_cafe_slidedesc[] = get_the_excerpt();
+          $Beri_cafe_slidelink[] = esc_url(get_permalink());
           ?>
           <img src="<?php the_post_thumbnail_url('full'); ?>" title="#slidecaption<?php echo esc_attr( $i ); ?>" />
           <?php
@@ -57,14 +57,14 @@ $args = array(
     </div>
         <?php
         $k = 0;
-        foreach( $skt_cafe_slideno as $skt_cafe_sln ){ ?>
-    <div id="slidecaption<?php echo esc_attr( $skt_cafe_sln ); ?>" class="nivo-html-caption">
+        foreach( $Beri_cafe_slideno as $Beri_cafe_sln ){ ?>
+    <div id="slidecaption<?php echo esc_attr( $Beri_cafe_sln ); ?>" class="nivo-html-caption">
       <div class="slide_info">
-        <h2><?php echo esc_html($skt_cafe_slidetitle[$k] ); ?></h2>
-        <p><?php echo esc_html($skt_cafe_slidedesc[$k] ); ?></p>
+        <h2><?php echo esc_html($Beri_cafe_slidetitle[$k] ); ?></h2>
+        <p><?php echo esc_html($Beri_cafe_slidedesc[$k] ); ?></p>
         <div class="clear"></div>
-        <a class="slide_more" href="<?php echo esc_url($skt_cafe_slidelink[$k] ); ?>">
-          <?php esc_html_e('Read More', 'skt-cafe');?>
+        <a class="slide_more" href="<?php echo esc_url($Beri_cafe_slidelink[$k] ); ?>">
+          <?php esc_html_e('Read More', 'Beri_cafe');?>
           </a>
       </div>
     </div>
@@ -91,7 +91,7 @@ if( $hidesecone == '') { ?>
             <div class="hm-leftcols">
             <h2><?php the_title(); ?></h2>
             <?php the_excerpt(); ?> 
-            <a class="ReadMore" href="<?php the_permalink(); ?>"><?php echo esc_html_e('Read More', 'skt-cafe');?></a>
+            <a class="ReadMore" href="<?php the_permalink(); ?>"><?php echo esc_html_e('Read More', 'Beri_cafe');?></a>
             </div>
             <?php if( has_post_thumbnail() ) { ?>
             <div class="hm-rightcols">
@@ -167,8 +167,8 @@ if( $hidesecone == '') { ?>
                         // Previous/next post navigation.
 						the_posts_pagination( array(
 							'mid_size' => 2,
-							'prev_text' => esc_html__( 'Back', 'skt-cafe' ),
-							'next_text' => esc_html__( 'Next', 'skt-cafe' ),
+							'prev_text' => esc_html__( 'Back', 'Beri_cafe' ),
+							'next_text' => esc_html__( 'Next', 'Beri_cafe' ),
 						) );
                     else :
                         // If no content, include the "No posts found" template.
@@ -202,8 +202,8 @@ if( $hidesecone == '') { ?>
                         // Previous/next post navigation.
 						the_posts_pagination( array(
 							'mid_size' => 2,
-							'prev_text' => esc_html__( 'Back', 'skt-cafe' ),
-							'next_text' => esc_html__( 'Next', 'skt-cafe' ),
+							'prev_text' => esc_html__( 'Back', 'Beri_cafe' ),
+							'next_text' => esc_html__( 'Next', 'Beri_cafe' ),
 						) );
                     else :
                         // If no content, include the "No posts found" template.

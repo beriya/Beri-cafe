@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package SKT Cafe
+ * @package Beri_cafe
  */
 get_header(); ?>
 <div class="container">
@@ -10,7 +10,7 @@ get_header(); ?>
         <section class="site-main">            
                 <?php while ( have_posts() ) : the_post();
 					get_template_part( 'content', 'single' );
-					skt_cafe_content_nav( 'nav-below' );
+					Beri_cafe_content_nav( 'nav-below' );
                     // If comments are open or we have at least one comment, load up the comment template
                     if ( comments_open() || '0' != get_comments_number() )
                     	comments_template();

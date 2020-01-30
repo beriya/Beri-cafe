@@ -4,20 +4,20 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package Beri Cafe
+ * @package Beri_cafe
  */
 ?> 
 <div class="footerinfoarea">
-    
+	
     <div class="clear"></div>
     <div class="footermenu">
-        <?php wp_nav_menu( array('theme_location' => 'footermenu') ); ?>
+    	<?php wp_nav_menu( array('theme_location' => 'footermenu') ); ?>
     </div>
-     </div>
+	 </div>
 <div id="copyright-area">
 <div class="copyright-wrapper">
 <div class="container">
-     <div class="copyright-txt"><?php echo esc_html('Beri Cafe');?></div>
+     <div class="copyright-txt"><?php echo esc_html('Beri_cafe');?></div>
      <div class="clear"></div>
            
 </div>

@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div class="container">
  *
- * @package SKT Cafe
+ * @package Beri_cafe
  */
 ?>
 <!DOCTYPE html>
@@ -48,7 +48,7 @@ if( $hidetopbar == '') { ?>
 <div class="header">
   <div class="container">
     <div class="logo">
-		<?php skt_cafe_the_custom_logo(); ?>
+		<?php Beri_cafe_the_custom_logo(); ?>
         <div class="clear"></div>
 		<?php	
         $description = get_bloginfo( 'description', 'display' );
@@ -60,7 +60,7 @@ if( $hidetopbar == '') { ?>
         <?php endif; ?>
         </a>
     </div>
-         <div class="toggle"><a class="toggleMenu" href="#" style="display:none;"><?php esc_attr_e('Menu','skt-cafe'); ?></a></div> 
+         <div class="toggle"><a class="toggleMenu" href="#" style="display:none;"><?php esc_attr_e('Menu','Beri_cafe'); ?></a></div> 
         <div class="sitenav">
           <?php wp_nav_menu( array('theme_location' => 'primary') ); ?>         
         </div><!-- .sitenav--> 

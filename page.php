@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package SKT Cafe
+ * @package Beri_cafe
  */
 get_header(); ?>
 <div class="container">
@@ -20,11 +20,11 @@ get_header(); ?>
 <?php
                                         the_content();
                                         wp_link_pages( array(
-                                            'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'skt-cafe' ) . '</span>',
+                                            'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'Beri_cafe' ) . '</span>',
                                             'after'       => '</div>',
                                             'link_before' => '<span>',
                                             'link_after'  => '</span>',
-                                            'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'skt-cafe' ) . ' </span>%',
+                                            'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'Beri_cafe' ) . ' </span>%',
                                             'separator'   => '<span class="screen-reader-text">, </span>',
                                         ) );
                                     ?> 

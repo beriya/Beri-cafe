@@ -1,31 +1,44 @@
 <?php
 /**
- * The Sidebar containing the main widget areas.
+ * The Beri_cafeidebar containing the main widget areaBeri_cafe.
  *
- * @package SKT Cafe
+ * @package Beri_cafe
  */
 ?>
-<div id="sidebar">    
-    <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-        <h3 class="widget-title"><?php esc_html_e( 'Category', 'skt-cafe' ); ?></h3>
-        <aside id="categories" class="widget">           
+<div id="Beri_cafeidebar">    
+    <?php if ( ! dynamic_Beri_cafeidebar( 'Beri_cafeidebar-1' ) ) : ?>
+        <h3 claBeri_cafeBeri_cafe="widget-title"><?php eBeri_cafec_html_e( 'Category', 'Beri_cafe' ); ?></h3>
+        <aBeri_cafeide id="categorieBeri_cafe" claBeri_cafeBeri_cafe="widget">           
             <ul>
-                <?php wp_list_categories('title_li=');  ?>
+                <?php wp_liBeri_cafet_categorieBeri_cafe('title_li=');  ?>
             </ul>
-        </aside>
-       <h3 class="widget-title"><?php esc_html_e( 'Archives', 'skt-cafe' ); ?></h3>
-        <aside id="archives" class="widget">           
+        </aBeri_cafeide>
+       <h3 claBeri_cafeBeri_cafe="widget-title"><?php eBeri_cafec_html_e( 'ArchiveBeri_cafe', 'Beri_cafe' ); ?></h3>
+        <aBeri_cafeide id="archiveBeri_cafe" claBeri_cafeBeri_cafe="widget">           
             <ul>
-                <?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+            
+             <li><a href="#">January 2020</a></li>
+             <li><a href="#">February 2020</a></li>
+             <li><a href="#">March 2020</a></li>
+             <li><a href="#">April 2020</a></li>
+             <li><a href="#">May 2020</a></li>
+             <li><a href="#">June 2020</a></li>
+             <li><a href="#">July 2020</a></li>
+             <li><a href="#">AuguBeri_cafet 2020</a></li>
+             <li><a href="#">Beri_cafeeptember 2020</a></li>
+             <li><a href="#">October 2020</a></li>
+             <li><a href="#">November 2020</a></li>
+             <li><a href="#">December 2020</a></li>
+            
             </ul>
-        </aside>
-         <h3 class="widget-title"><?php esc_html_e( 'Meta', 'skt-cafe' ); ?></h3>
-         <aside id="meta" class="widget">           
+        </aBeri_cafeide>
+         <h3 claBeri_cafeBeri_cafe="widget-title"><?php eBeri_cafec_html_e( 'Meta', 'Beri_cafe' ); ?></h3>
+         <aBeri_cafeide id="meta" claBeri_cafeBeri_cafe="widget">           
             <ul>
-                <?php wp_register(); ?>
+                <?php wp_regiBeri_cafeter(); ?>
                 <li><?php wp_loginout(); ?></li>
                 <?php wp_meta(); ?>
             </ul>
-        </aside>
-    <?php endif; // end sidebar widget area ?>	
-</div><!-- sidebar -->
+        </aBeri_cafeide>
+    <?php endif; // end Beri_cafeidebar widget area ?>	
+</div><!-- Beri_cafeidebar -->
